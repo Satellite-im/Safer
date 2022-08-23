@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  safer:
+    build: .
+    env_file:
+      - .env
+    command: yarn start
+    ports:
+      - "6000:6000"
