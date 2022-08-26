@@ -2,7 +2,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-const retry = async(fn, retries = 3, delay = 2000) => {
+const retry = async (fn, retries = 3, delay = 2000) => {
   try {
     return await fn()
   } catch (e) {

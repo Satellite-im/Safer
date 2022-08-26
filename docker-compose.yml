@@ -7,4 +7,4 @@ services:
       - .env
     command: yarn start
     ports:
-      - "6000:6000"
+      - '6000:6000'
