@@ -11,7 +11,7 @@
 - `yarn start`
 - Safer file upload url will be: `http://localhost:6000/upload`
 
-## Run it on Docker
+## Run it locally on Docker
 
 - Install Docker: https://docs.docker.com/engine/install
 - Run `./pre-up.sh`

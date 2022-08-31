@@ -1,4 +1,3 @@
 #!/bin/bash
-ls
-npm i
-node src/index.js
+yarn
+yarn start

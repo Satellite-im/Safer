@@ -52,6 +52,10 @@ app.use(
   })
 );
 
+app.route("/health").get((req, res) => {
+  res.send("OK");
+});
+
 app.route("/upload").post(function (req, res, next) {
   if (!req.busboy) {
     return res.status(400).send("invalid request");

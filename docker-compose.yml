@@ -2,12 +2,9 @@ version: '3'
 
 services:
   csam:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    build: .
     platform: "linux/amd64"
-    env_file:
+    env_file: # for local development
       - .env
-    command: yarn start
     ports:
       - "6000:6000"
