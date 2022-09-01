@@ -53,7 +53,7 @@ app.use(
 );
 
 app.route("/health").get((req, res) => {
-  res.send("OK");
+  res.status(200).send("OK");
 });
 
 app.route("/upload").post(function (req, res, next) {
